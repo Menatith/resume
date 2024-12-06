@@ -1,1 +1,45 @@
 /* You can add global styles to this file, and also import other style files */
+:root {
+  --accent-primary: oklch(33.87% 0.0378 168.51);
+  --accent-secondary: oklch(46.8% 0.0854 194.08);
+  --text-primary: #fcf9f2;
+  --header-bg-opaque: #fcf9f2f2;
+  --header-bg-semi-trans: #fcf9f280;
+}
+
+/* add border box sizing to the page right from the start */
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+}
+
+img {
+  width: 100%;
+  max-width: 100%;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Philosopher", serif;
+}
+
+section {
+  padding: 0 4rem;
+}
+
+@media (min-width: 768px) {
+  section {
+    padding: 0 10rem;
+  }
+}
