@@ -1,1 +1,49 @@
-<p>timeline works!</p>
+<section>
+  <div class="timeline-container">
+    <h2>Career</h2>
+    <ol>
+      @for (entry of career; track $index) {
+      <li>
+        @if(entry.endDate === 'Huidig') {
+        <div class="date">
+          {{ entry.startDate | date : "MMM yyyy" }} - {{ entry.endDate }}
+        </div>
+        } @else {
+        <div class="date">
+          {{ entry.startDate | date : "MMM yyyy" }} -
+          {{ entry.endDate | date : "MMM yyyy" }}
+        </div>
+        }
+        <div class="entry-info">
+          <div class="entry-title">{{ entry.jobTitle }}</div>
+          <div class="entry-location">{{ entry.jobCompany }}</div>
+          <div class="entry-description">{{ entry.jobDescription }}</div>
+        </div>
+      </li>
+      } @empty {
+      <div>Geen data beschikbaar</div>
+      }
+    </ol>
+    <h2>Education</h2>
+    <ol>
+      @for(entry of education; track $index) {
+
+      <li>
+        <div class="date">
+          {{ entry.startDate | date : "yyyy" }} -
+          {{ entry.endDate | date : "yyyy" }}
+        </div>
+        <div class="entry-info">
+          <div class="entry-title">{{ entry.courseTitle }}</div>
+          <div class="entry-location">{{ entry.courseLocation }}</div>
+          @if(entry.courseDescription !== '') {
+          <div class="entry-description">{{ entry.courseDescription }}</div>
+          }
+        </div>
+      </li>
+      } @empty {
+      <div>Geen data beschikbaar.</div>
+      }
+    </ol>
+  </div>
+</section>

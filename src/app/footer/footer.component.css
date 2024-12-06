@@ -1,0 +1,6 @@
+footer {
+  display: flex;
+  justify-content: space-between;
+  background: var(--header-bg-opaque);
+  padding: 0.7rem 1rem;
+}

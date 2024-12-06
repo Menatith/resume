@@ -1,0 +1,40 @@
+.timeline-container {
+  width: 75%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+ol {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  display: grid;
+  grid-template-columns: 1fr 0.2fr 1fr;
+  margin-bottom: 1rem;
+}
+
+li:last-child {
+  margin-bottom: 3rem;
+}
+
+.date {
+  grid-column: 1 / 2;
+  text-align: right;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+.entry-info {
+  grid-column: 3 / 4;
+  text-align: left;
+}
+
+.entry-title {
+  font-weight: 700;
+}
+
+.entry-location {
+  font-weight: 300;
+}

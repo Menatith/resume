@@ -1,0 +1,67 @@
+header {
+  position: sticky;
+  top: 0;
+  background: var(--header-bg-opaque);
+  padding: 0.4rem 0.5rem;
+}
+
+nav {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.6rem;
+}
+
+.app-title {
+  font-family: "Philosopher", serif;
+}
+
+@supports (backdrop-filter: blur(16px)) or (-webkit-backdrop-filter: blur(16px)) {
+  header {
+    background: var(--header-bg-semi-trans);
+  }
+  .backdrop {
+    position: absolute;
+    inset: 0;
+    -webkit-backdrop-filter: blur(16px);
+    backdrop-filter: blur(16px);
+    background: linear-gradient(
+      to bottom,
+      var(--header-bg-opaque),
+      transparent 50%
+    );
+    pointer-events: none;
+  }
+}
+
+@supports (mask-image: none) or (-webkit-mask-image: none) {
+  .backdrop {
+    height: 200%;
+    -webkit-mask-image: linear-gradient(
+      to bottom,
+      black 0% 50%,
+      transparent 50% 100%
+    );
+    mask-image: linear-gradient(to bottom, black 0% 50%, transparent 50% 100%);
+  }
+}
+
+ul {
+  display: flex;
+
+  li {
+    list-style: none;
+    margin-left: 1rem;
+  }
+}
+
+.app-title {
+  margin-left: 1rem;
+  align-content: center;
+}
+
+.menu-right {
+  display: flex;
+  margin-right: 1rem;
+}
