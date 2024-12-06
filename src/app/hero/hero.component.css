@@ -1,0 +1,31 @@
+section {
+  height: calc(100vh - 2.4rem);
+  height: calc(100dvh - 2.4rem);
+  background: linear-gradient(
+    to right,
+    var(--accent-primary),
+    var(--accent-secondary)
+  );
+  color: var(--text-primary);
+  align-content: center;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+.hero-text {
+  margin: 0 auto;
+  width: 66%;
+}
+
+@media (min-width: 768px) {
+  .hero-text {
+    width: 33%;
+    margin: 0;
+  }
+
+  h1 {
+    font-size: 5rem;
+  }
+}
