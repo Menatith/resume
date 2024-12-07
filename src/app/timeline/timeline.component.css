@@ -1,9 +1,12 @@
+section {
+  padding-top: 3rem;
+}
+
 .timeline-container {
   margin: 0 auto;
 }
 
 ol {
-  list-style: none;
   padding: 0;
   text-align: left;
 }
