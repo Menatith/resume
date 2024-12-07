@@ -38,12 +38,16 @@ section {
   padding: 0 2rem;
 }
 
+section:not(#hero-section) {
+  padding-top: 3rem;
+}
+
 li {
   list-style: none;
 }
 
 @media (min-width: 768px) {
   section {
-    padding: 0 10rem;
+    padding: 0 10rem 0 7rem;
   }
 }

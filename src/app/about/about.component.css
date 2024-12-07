@@ -1,17 +1,35 @@
 section {
-  padding-top: 2rem;
   padding-bottom: 2rem;
 }
 
+.about-container {
+  margin: 0 auto;
+}
+
+img {
+  border-radius: 50%;
+  object-fit: contain;
+  max-width: 300px;
+  height: auto;
+}
+
 @media (min-width: 768px) {
-  section {
+  .about-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
 
+  .about-container {
+    width: 75%;
+  }
+
   .img-container {
-    height: 100%;
     display: flex;
     align-items: center;
+    justify-content: flex-end;
+  }
+
+  img {
+    margin-right: 3rem;
   }
 }

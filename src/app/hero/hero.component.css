@@ -1,6 +1,6 @@
 section {
-  height: calc(100vh - 2.4rem);
-  height: calc(100dvh - 2.4rem);
+  min-height: calc(100vh - 2.4rem);
+  min-height: calc(100dvh - 2.4rem);
   background: linear-gradient(
     to right,
     var(--accent-primary),
@@ -21,11 +21,17 @@ h1 {
 
 @media (min-width: 768px) {
   .hero-text {
-    width: 33%;
     margin: 0;
   }
 
   h1 {
     font-size: 5rem;
+    width: 33%;
+  }
+}
+
+@media (min-width: 992px) {
+  .hero-text {
+    width: 33%;
   }
 }
