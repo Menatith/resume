@@ -1,40 +1,60 @@
 .timeline-container {
-  width: 75%;
   margin: 0 auto;
-  text-align: center;
 }
 
 ol {
   list-style: none;
   padding: 0;
+  text-align: left;
 }
 
 li {
-  display: grid;
-  grid-template-columns: 1fr 0.2fr 1fr;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
 }
 
 li:last-child {
-  margin-bottom: 3rem;
+  margin-bottom: 5rem;
 }
 
 .date {
-  grid-column: 1 / 2;
-  text-align: right;
   font-weight: 300;
   text-transform: uppercase;
-}
-
-.entry-info {
-  grid-column: 3 / 4;
-  text-align: left;
+  margin-bottom: 1rem;
 }
 
 .entry-title {
   font-weight: 700;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
 }
 
 .entry-location {
   font-weight: 300;
+  margin-bottom: 1rem;
+}
+
+@media (min-width: 768px) {
+  .timeline-container {
+    width: 75%;
+    text-align: center;
+  }
+
+  li {
+    display: grid;
+    grid-template-columns: 1fr 0.2fr 1fr;
+  }
+
+  li:last-child {
+    margin-bottom: 3rem;
+  }
+
+  .date {
+    grid-column: 1 / 2;
+    text-align: right;
+  }
+
+  .entry-info {
+    grid-column: 3 / 4;
+    text-align: left;
+  }
 }

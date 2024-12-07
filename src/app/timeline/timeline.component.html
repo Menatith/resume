@@ -1,17 +1,18 @@
 <section>
   <div class="timeline-container">
-    <h2>Career</h2>
+    <h2>Werkervaring</h2>
     <ol>
       @for (entry of career; track $index) {
       <li>
         @if(entry.endDate === 'Huidig') {
         <div class="date">
-          {{ entry.startDate | date : "MMM yyyy" }} - {{ entry.endDate }}
+          {{ entry.startDate | date : "MMM yyyy" : "" : "nl" }} -
+          {{ entry.endDate }}
         </div>
         } @else {
         <div class="date">
-          {{ entry.startDate | date : "MMM yyyy" }} -
-          {{ entry.endDate | date : "MMM yyyy" }}
+          {{ entry.startDate | date : "MMM yyyy" : "" : "nl" }} -
+          {{ entry.endDate | date : "MMM yyyy" : "" : "nl" }}
         </div>
         }
         <div class="entry-info">
@@ -24,7 +25,7 @@
       <div>Geen data beschikbaar</div>
       }
     </ol>
-    <h2>Education</h2>
+    <h2>Opleiding</h2>
     <ol>
       @for(entry of education; track $index) {
 
