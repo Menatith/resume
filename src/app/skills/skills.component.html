@@ -17,7 +17,7 @@
         <li>Vue 3 (+ Nuxt)</li>
         <li>Blazor</li>
         <li>C#</li>
-        <li>SQLite</li>
+        <li>SQL</li>
         <li>JSON/XML</li>
         <li>Azure</li>
         <li>Git</li>
@@ -34,6 +34,7 @@
           <li>A11y</li>
           <li>Postman</li>
           <li>Lighthouse</li>
+          <li>PowerBI</li>
         </ul>
       </div>
       <div class="language-skills">
@@ -49,7 +50,15 @@
     <div class="column-3">
       <h3>Certificeringen</h3>
       <ul>
-        @for (certifacte of certificates; track $index) { }
+        @for (certificate of certificates; track $index) {
+        <li class="certificate">
+          <div>
+            <div>{{ certificate.title }}</div>
+            <div class="cert-org">{{ certificate.organisation }}</div>
+          </div>
+          <div class="cert-date">{{ certificate.date | date : "yyyy" }}</div>
+        </li>
+        }
       </ul>
     </div>
   </div>

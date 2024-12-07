@@ -1,11 +1,30 @@
 section {
-  text-align: center;
   padding-top: 3rem;
 }
 
+.skill-list {
+  text-align: left;
+}
+
+ul {
+  padding-left: 0;
+}
+
+.cert-org,
+.cert-date {
+  font-weight: 300;
+}
+
+.certificate {
+  margin-bottom: 0.5rem;
+}
+
 @media (min-width: 768px) {
+  section {
+    text-align: center;
+  }
+
   .skill-list {
-    text-align: left;
     width: 75%;
     margin: 0 auto;
     display: grid;
@@ -18,8 +37,13 @@ section {
     margin: 0 auto;
   }
 
-  ul {
-    padding-left: 0;
+  .certificate {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .cert-date {
+    padding-left: 1rem;
   }
 
   li:last-child {
