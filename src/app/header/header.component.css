@@ -11,6 +11,10 @@ nav {
   display: flex;
   justify-content: space-between;
   font-size: 1.6rem;
+
+  a:visited {
+    color: inherit;
+  }
 }
 
 .app-title {
@@ -51,7 +55,6 @@ ul {
   display: flex;
 
   li {
-    list-style: none;
     margin-left: 1rem;
   }
 }

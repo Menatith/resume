@@ -1,3 +1,65 @@
 <section>
   <h2>Vaardigheden</h2>
+  <p>Een samenvatting van mijn voornaamste vaardigheden als developer.</p>
+  <div class="skill-list">
+    <div class="code-skills column-1">
+      <h3>Code vaardigheden</h3>
+      <ul>
+        <li>HTML5</li>
+        <li>CSS3</li>
+        <li>Sass (SCSS)</li>
+        <li>Bootstrap 3 / 4 / 5</li>
+        <li>TypeScript</li>
+        <li>Angular 17 / 18 + certified</li>
+        <li>Wordpress (+ ACF)</li>
+        <li>PHP</li>
+        <li>JavaScript</li>
+        <li>Vue 3 (+ Nuxt)</li>
+        <li>Blazor</li>
+        <li>C#</li>
+        <li>SQL</li>
+        <li>JSON/XML</li>
+        <li>Azure</li>
+        <li>Git</li>
+      </ul>
+    </div>
+    <div class="column-2">
+      <div class="tooling-skills">
+        <h3>Tooling en soft skills</h3>
+        <ul>
+          <li>Github / Gitlab / Bitbucket</li>
+          <li>Jira / Atlassian</li>
+          <li>Azure DevOps</li>
+          <li>Scrum / Agile</li>
+          <li>A11y</li>
+          <li>Postman</li>
+          <li>Lighthouse</li>
+          <li>PowerBI</li>
+        </ul>
+      </div>
+      <div class="language-skills">
+        <h3>Talen</h3>
+        <ul>
+          <li>Engels (moedertaal, tweetalig)</li>
+          <li>Nederlands (moedertaal, tweetalig)</li>
+          <li>Duits (ein bisschen)</li>
+          <li>Frans (un petit peu)</li>
+        </ul>
+      </div>
+    </div>
+    <div class="column-3">
+      <h3>Certificeringen</h3>
+      <ul>
+        @for (certificate of certificates; track $index) {
+        <li class="certificate">
+          <div>
+            <div>{{ certificate.title }}</div>
+            <div class="cert-org">{{ certificate.organisation }}</div>
+          </div>
+          <div class="cert-date">{{ certificate.date | date : "yyyy" }}</div>
+        </li>
+        }
+      </ul>
+    </div>
+  </div>
 </section>
