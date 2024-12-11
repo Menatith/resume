@@ -10,6 +10,15 @@ section {
   align-content: center;
 }
 
+@supports not (
+  background:
+    linear-gradient(to right, var(--accent-primary), var(--accent-secondary))
+) {
+  section {
+    background: linear-gradient(to right, #233e34, #006968);
+  }
+}
+
 h1 {
   font-size: 2.5rem;
 }
