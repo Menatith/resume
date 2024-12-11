@@ -35,6 +35,15 @@ h3 {
   font-family: "Philosopher", serif;
 }
 
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:visited {
+  color: inherit;
+}
+
 section {
   padding: 0 2rem;
 }

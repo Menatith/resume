@@ -11,10 +11,6 @@ nav {
   display: flex;
   justify-content: space-between;
   font-size: 1.6rem;
-
-  a:visited {
-    color: inherit;
-  }
 }
 
 .app-title {
