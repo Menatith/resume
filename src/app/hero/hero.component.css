@@ -10,8 +10,8 @@ section {
   section {
     background: linear-gradient(
       to right,
-      oklch(33.87% 0.0378 168.51),
-      oklch(46.8% 0.0854 194.08)
+      var(--accent-primary),
+      var(--accent-secondary)
     );
   }
 }
